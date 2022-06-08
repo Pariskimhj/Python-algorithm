@@ -39,12 +39,6 @@
 # [output 예시]
 # #1 1 2 2 2 0	//첫 번째 테스트케이스 결과
 
-# # [시나리오]
-# 1. 
-# 2. 
-# 3. N개의 0이 요소로 있는 리스트 만들기
-# 4. L, R 입력 받고 list에서 L에서 R+1까지의 index에 해당하는 값을 i로 치환
-
 for t in range(int(input())):            # T값 입력 받기
     N, Q = map(int, input().split())     # N, Q 값 입력 받기
     N = [0 for n in range(1, N+1)]       # N개의 0이 요소로 있는 리스트 만들기
