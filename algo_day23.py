@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[14]:
 
 
 # 문제 출처: 백준
@@ -21,8 +21,9 @@
 # [출력]
 # 각 테스트 케이스에 대해 P를 출력
 
-for t in range(int(input())):
-    R, S = input().split()
-    for s in S:
-        print(s*int(R), end='')
+for t in range(int(input())):    # test case 입력받기
+    R, S = input().split()       # R, S 입력받기
+    for s in S:                  # 문자열 하나씩 돌리기
+        print(s*int(R), end='')  # R만큼 문자열 반복
+    print()
 
