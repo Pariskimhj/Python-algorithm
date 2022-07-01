@@ -24,6 +24,6 @@
     
 for t in range(int(input())): # T 입력 받기
     s = input()               # 문자열 입력 받기
-    length = [l for l in range(1, 11) if s[0:l] == s[l:l+l]] # 구간별로 나눠서 문자열을 서로 비교했을 때 같으면 길이를 리스트에 저장
+    length = [l for l in range(1, 11) if s[0:l] == s[l:l+l]] # 같은 길이의 구간별로 나눠서 문자열을 서로 비교했을 때 같으면 길이를 리스트에 저장
     print(f"#{t+1} {min(length)}") # 패턴 길이의 최소값 출력
 
