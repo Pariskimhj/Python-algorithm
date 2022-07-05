@@ -46,9 +46,9 @@ for t in range(int(input())):                                   # T 입력 받�
     score = [list(map(int, input().split())) for _ in range(N)] # 10명의 점수 입력 받기
     score = [s[0]*0.35 + s[1]*0.45 + s[2]*0.20 for s in score]  # 총점 list 만들기
     K_s = score[K-1]                                            # K번 학생의 점수
-    grade = [[g]*(N//10) for g in ['A+', 'A0', 'A-', 'B+', 'B0', 'B-', 'C+', 'C0', 'C-', 'D0']] # 인원 대비 줄 수 있는 점수 list 
+    grade = [[g]*(N//10) for g in ['A+', 'A0', 'A-', 'B+', 'B0', 'B-', 'C+', 'C0', 'C-', 'D0']] # 인원 대비 줄 수 있는 성적 list 
     grade = [g2 for g1 in grade for g2 in g1]                   # 2중 리스트 풀기
     for s, g in zip(sorted(score)[::-1], grade):                # 높은 점수부터 점수, 성적 확인
         if s == K_s:                                            # 점수가 K번 학생의 점수와 같으면
-            print(f"#{t+1} {g}")                                # K번 학생의 등급 출력
+            print(f"#{t+1} {g}")                                # K번 학생의 성적 출력
 
