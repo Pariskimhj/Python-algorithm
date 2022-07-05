@@ -36,8 +36,8 @@ for t in range(int(input())):              # T 입력 받기
     Bj = list(map(int, input().split()))   # Bj 입력 받기
     if N > M:                              # N이 M보다 크면
         Ai,Bj = Bj,Ai                      # Ai, Bj 서로 바꾸기
-        N,M = M,N                          # Ai, Bj 서로 바꾸기
-    m = []                                 # 곱해서 더한 값의 list
+        N,M = M,N                          # N, M 서로 바꾸기
+    m = []                                 # 곱해서 더한 값의 list, list 초기화
     for i in range(M-N+1):                 # 리스트 길이 맞춰주기(처음 인덱스는 0부터 M-N+1까지)
         m.append(sum([a*b for a, b in zip(Ai, Bj[i:N+i])])) # 리스트의 요소끼리 곱한 후 더하기
     print(f"#{t+1} {max(m)}")              # 더한 값 중 최댓값 출력
